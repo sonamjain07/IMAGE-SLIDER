@@ -9,13 +9,13 @@ body {
     color: black;
 }
 h1{
-    font-size: 40px;
+    font-size: 30px;
     font-family: cursive;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     transition: 5s;
     animation: box 5s ease infinite;
-    background-image: url(./media/pic10.jpeg);
+    background-image: url(./media/bg.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,11 +40,11 @@ h1{
     display: flex;
     height: 80%;
     width: 100%;
-    margin: 1% auto 0;
+    margin: 1% auto 2%;
 }
 
 .pic{
-    margin: 0 5px;
+    margin: 0 2px;
     flex-grow: 1;
     flex-basis: 0;
     transition: .8s;
@@ -54,24 +54,34 @@ h1{
     width: 100%;
     object-fit: cover;
     transition: .5s;
+    border-radius: 15px;
 }
-.pic:hover{
+  .pic:hover{
     flex-basis: 50%;
-}
+} 
 .active{
     flex-basis: 50%;
 }
-#gallery:hover .active{
-    flex-basis: 0;
-}
+  #gallery:hover .active{
+    flex-basis: 20%;
+}   
 .pic:nth-child(1):hover{
     flex-basis: 50%;
 }
+h3{
+    text-align: center;
+    color: teal;
+    font-size: 40px;
+}
+
 
 
 
 @media screen and (max-width:1280px)
 {
+    .active{
+        flex-basis: 0%;
+    }
     #gallery:hover .active{
         flex-basis: 50%;
     }
